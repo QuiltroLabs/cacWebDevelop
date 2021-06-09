@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            width: 30%;
+            text-align:center;
+        }
+
+                  
+        div {             
+            display: flex;
+            justify-content: center;  
+            
+        }  
+       
+        * {
+        color: DarkSlateGray;
+        }
+        .input {
+        border: 1px solid #006;
+        background: whitesmoke;
+        }
+        .input:hover {
+        border: 1px solid #f00;
+        background:whitesmoke;
+        }
+        .button {
+        border: 1px solid #006;
+        background: whitesmoke;
+        }
+        .button:hover {
+        border: 1px solid #f00;
+        background: #eef;
+        }
+        label {
+        display: block;
+        width: 60px;
+        float: left;
+        margin: 2px 4px 6px 4px;
+        }
+        br {
+        clear: left;
+        }
+
+    </style>
+    <script type = "text/javascript" src = "control.js" ></script>
+</head>
+<body>
+
+    <div>
+        <h3>Ingreso al sistema</h3>
+    </div>
+    <div>               
+        
+        <form class="form" name="f1" action="destino.html" onsubmit="return validacion();">
+            <label for="user">Usuario:</label> <input type="text" class="input" id="nombre"> 
+            <br>
+            <label for="key">Clave:</label> <input type="password"  class="input" id="key">
+            <br><br>
+            <label>&nbsp</label><input type="submit" class="button" value="Enviar"> 
+            
+        </form>         
+    </div>
+
+</body>
+</html>
